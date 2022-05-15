@@ -1,0 +1,6 @@
+framework module Pods_TrainTicketApp {
+  umbrella header "Pods-TrainTicketApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

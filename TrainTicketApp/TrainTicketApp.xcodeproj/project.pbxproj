@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B715E1A1D44356E9588553 /* Pods_TrainTicketAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EF21B8E1D9F209BE7225C7 /* Pods_TrainTicketAppTests.framework */; };
+		2576E1BB2831717D0071C2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1BA2831717D0071C2E7 /* AppDelegate.swift */; };
+		2576E1BD2831717D0071C2E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1BC2831717D0071C2E7 /* SceneDelegate.swift */; };
+		2576E1C22831717D0071C2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2576E1C02831717D0071C2E7 /* Main.storyboard */; };
+		2576E1C42831717D0071C2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2576E1C32831717D0071C2E7 /* Assets.xcassets */; };
+		2576E1C72831717D0071C2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2576E1C52831717D0071C2E7 /* LaunchScreen.storyboard */; };
+		2576E1D22831717E0071C2E7 /* TrainTicketAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1D12831717E0071C2E7 /* TrainTicketAppTests.swift */; };
+		2576E1DC2831717E0071C2E7 /* TrainTicketAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1DB2831717E0071C2E7 /* TrainTicketAppUITests.swift */; };
+		2576E1DE2831717E0071C2E7 /* TrainTicketAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1DD2831717E0071C2E7 /* TrainTicketAppUITestsLaunchTests.swift */; };
+		2576E1F0283172E30071C2E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1EF283172E30071C2E7 /* User.swift */; };
+		2576E1F2283176CB0071C2E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2576E1F1283176CB0071C2E7 /* GoogleService-Info.plist */; };
+		2576E1F4283197F50071C2E7 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1F3283197F50071C2E7 /* ViewControllerExtensions.swift */; };
+		2576E1F7283198760071C2E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1F5283198760071C2E7 /* MainViewController.swift */; };
+		2576E1F8283198760071C2E7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2576E1F6283198760071C2E7 /* MainViewController.xib */; };
+		2576E1FB28319B6E0071C2E7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1F928319B6E0071C2E7 /* RegisterViewController.swift */; };
+		2576E1FC28319B6E0071C2E7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2576E1FA28319B6E0071C2E7 /* RegisterViewController.xib */; };
+		2576E1FE2831A12E0071C2E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1FD2831A12E0071C2E7 /* LoginViewController.swift */; };
+		4FBA7EBADB382019AA2E694A /* Pods_TrainTicketApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EDF50F971D12AE646F2D39 /* Pods_TrainTicketApp.framework */; };
+		A36F576AD0F6CFA60580EB73 /* Pods_TrainTicketApp_TrainTicketAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD660C649FBFF554F740098 /* Pods_TrainTicketApp_TrainTicketAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2576E1CE2831717E0071C2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2576E1AF2831717D0071C2E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2576E1B62831717D0071C2E7;
+			remoteInfo = TrainTicketApp;
+		};
+		2576E1D82831717E0071C2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2576E1AF2831717D0071C2E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2576E1B62831717D0071C2E7;
+			remoteInfo = TrainTicketApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E888ACA44EC3503920ABD5D /* Pods-TrainTicketApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketApp.release.xcconfig"; path = "Target Support Files/Pods-TrainTicketApp/Pods-TrainTicketApp.release.xcconfig"; sourceTree = "<group>"; };
+		2576E1B72831717D0071C2E7 /* TrainTicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainTicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2576E1BA2831717D0071C2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2576E1BC2831717D0071C2E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2576E1C12831717D0071C2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2576E1C32831717D0071C2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2576E1C62831717D0071C2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2576E1C82831717D0071C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2576E1CD2831717E0071C2E7 /* TrainTicketAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainTicketAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2576E1D12831717E0071C2E7 /* TrainTicketAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTicketAppTests.swift; sourceTree = "<group>"; };
+		2576E1D72831717E0071C2E7 /* TrainTicketAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainTicketAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2576E1DB2831717E0071C2E7 /* TrainTicketAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTicketAppUITests.swift; sourceTree = "<group>"; };
+		2576E1DD2831717E0071C2E7 /* TrainTicketAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTicketAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2576E1EF283172E30071C2E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2576E1F1283176CB0071C2E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2576E1F3283197F50071C2E7 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2576E1F5283198760071C2E7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2576E1F6283198760071C2E7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2576E1F928319B6E0071C2E7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2576E1FA28319B6E0071C2E7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		2576E1FD2831A12E0071C2E7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		259D8FEDD120C4CD95387532 /* Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrainTicketApp-TrainTicketAppUITests/Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		30BDC06284D07AAA59651825 /* Pods-TrainTicketAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketAppTests.release.xcconfig"; path = "Target Support Files/Pods-TrainTicketAppTests/Pods-TrainTicketAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		36EDF50F971D12AE646F2D39 /* Pods_TrainTicketApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTicketApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A83D766EE8BBBC69B4F1755 /* Pods-TrainTicketApp-TrainTicketAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketApp-TrainTicketAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TrainTicketApp-TrainTicketAppUITests/Pods-TrainTicketApp-TrainTicketAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		865486A7A0C1C441D0B5BA35 /* Pods-TrainTicketAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TrainTicketAppTests/Pods-TrainTicketAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AD660C649FBFF554F740098 /* Pods_TrainTicketApp_TrainTicketAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTicketApp_TrainTicketAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EF21B8E1D9F209BE7225C7 /* Pods_TrainTicketAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTicketAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F84DB4561002D08DA37621 /* Pods-TrainTicketApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketApp.debug.xcconfig"; path = "Target Support Files/Pods-TrainTicketApp/Pods-TrainTicketApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2576E1B42831717D0071C2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBA7EBADB382019AA2E694A /* Pods_TrainTicketApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2576E1CA2831717E0071C2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B715E1A1D44356E9588553 /* Pods_TrainTicketAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2576E1D42831717E0071C2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36F576AD0F6CFA60580EB73 /* Pods_TrainTicketApp_TrainTicketAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056EC18BB8AD27FEE86575D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36EDF50F971D12AE646F2D39 /* Pods_TrainTicketApp.framework */,
+				9AD660C649FBFF554F740098 /* Pods_TrainTicketApp_TrainTicketAppUITests.framework */,
+				B5EF21B8E1D9F209BE7225C7 /* Pods_TrainTicketAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2576E1AE2831717D0071C2E7 = {
+			isa = PBXGroup;
+			children = (
+				2576E1B92831717D0071C2E7 /* TrainTicketApp */,
+				2576E1D02831717E0071C2E7 /* TrainTicketAppTests */,
+				2576E1DA2831717E0071C2E7 /* TrainTicketAppUITests */,
+				2576E1B82831717D0071C2E7 /* Products */,
+				EADFEA49A675DE3DE4C8BB02 /* Pods */,
+				056EC18BB8AD27FEE86575D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2576E1B82831717D0071C2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1B72831717D0071C2E7 /* TrainTicketApp.app */,
+				2576E1CD2831717E0071C2E7 /* TrainTicketAppTests.xctest */,
+				2576E1D72831717E0071C2E7 /* TrainTicketAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2576E1B92831717D0071C2E7 /* TrainTicketApp */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1EE2831724E0071C2E7 /* Helpers */,
+				2576E1ED283172480071C2E7 /* Models */,
+				2576E1EC283172420071C2E7 /* Controllers */,
+				2576E1EB2831722C0071C2E7 /* Views */,
+				2576E1EA283172220071C2E7 /* Supporting Files */,
+			);
+			path = TrainTicketApp;
+			sourceTree = "<group>";
+		};
+		2576E1D02831717E0071C2E7 /* TrainTicketAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1D12831717E0071C2E7 /* TrainTicketAppTests.swift */,
+			);
+			path = TrainTicketAppTests;
+			sourceTree = "<group>";
+		};
+		2576E1DA2831717E0071C2E7 /* TrainTicketAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1DB2831717E0071C2E7 /* TrainTicketAppUITests.swift */,
+				2576E1DD2831717E0071C2E7 /* TrainTicketAppUITestsLaunchTests.swift */,
+			);
+			path = TrainTicketAppUITests;
+			sourceTree = "<group>";
+		};
+		2576E1EA283172220071C2E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1F1283176CB0071C2E7 /* GoogleService-Info.plist */,
+				2576E1BA2831717D0071C2E7 /* AppDelegate.swift */,
+				2576E1BC2831717D0071C2E7 /* SceneDelegate.swift */,
+				2576E1C32831717D0071C2E7 /* Assets.xcassets */,
+				2576E1C82831717D0071C2E7 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2576E1EB2831722C0071C2E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1C02831717D0071C2E7 /* Main.storyboard */,
+				2576E1C52831717D0071C2E7 /* LaunchScreen.storyboard */,
+				2576E1F6283198760071C2E7 /* MainViewController.xib */,
+				2576E1FA28319B6E0071C2E7 /* RegisterViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2576E1EC283172420071C2E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1F5283198760071C2E7 /* MainViewController.swift */,
+				2576E1F928319B6E0071C2E7 /* RegisterViewController.swift */,
+				2576E1FD2831A12E0071C2E7 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2576E1ED283172480071C2E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1EF283172E30071C2E7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2576E1EE2831724E0071C2E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2576E1F3283197F50071C2E7 /* ViewControllerExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EADFEA49A675DE3DE4C8BB02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0F84DB4561002D08DA37621 /* Pods-TrainTicketApp.debug.xcconfig */,
+				0E888ACA44EC3503920ABD5D /* Pods-TrainTicketApp.release.xcconfig */,
+				259D8FEDD120C4CD95387532 /* Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig */,
+				6A83D766EE8BBBC69B4F1755 /* Pods-TrainTicketApp-TrainTicketAppUITests.release.xcconfig */,
+				865486A7A0C1C441D0B5BA35 /* Pods-TrainTicketAppTests.debug.xcconfig */,
+				30BDC06284D07AAA59651825 /* Pods-TrainTicketAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2576E1B62831717D0071C2E7 /* TrainTicketApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2576E1E12831717E0071C2E7 /* Build configuration list for PBXNativeTarget "TrainTicketApp" */;
+			buildPhases = (
+				5B8E316E7B901A5B433BD4EA /* [CP] Check Pods Manifest.lock */,
+				2576E1B32831717D0071C2E7 /* Sources */,
+				2576E1B42831717D0071C2E7 /* Frameworks */,
+				2576E1B52831717D0071C2E7 /* Resources */,
+				19B5E18FB5C258F50E8A0CFF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrainTicketApp;
+			productName = TrainTicketApp;
+			productReference = 2576E1B72831717D0071C2E7 /* TrainTicketApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2576E1CC2831717E0071C2E7 /* TrainTicketAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2576E1E42831717E0071C2E7 /* Build configuration list for PBXNativeTarget "TrainTicketAppTests" */;
+			buildPhases = (
+				21C08437EFAA3B0CE987EAA3 /* [CP] Check Pods Manifest.lock */,
+				2576E1C92831717E0071C2E7 /* Sources */,
+				2576E1CA2831717E0071C2E7 /* Frameworks */,
+				2576E1CB2831717E0071C2E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2576E1CF2831717E0071C2E7 /* PBXTargetDependency */,
+			);
+			name = TrainTicketAppTests;
+			productName = TrainTicketAppTests;
+			productReference = 2576E1CD2831717E0071C2E7 /* TrainTicketAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2576E1D62831717E0071C2E7 /* TrainTicketAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2576E1E72831717E0071C2E7 /* Build configuration list for PBXNativeTarget "TrainTicketAppUITests" */;
+			buildPhases = (
+				667BF331DC11843E78E14A58 /* [CP] Check Pods Manifest.lock */,
+				2576E1D32831717E0071C2E7 /* Sources */,
+				2576E1D42831717E0071C2E7 /* Frameworks */,
+				2576E1D52831717E0071C2E7 /* Resources */,
+				36FFBA011EB95D6D63A51493 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2576E1D92831717E0071C2E7 /* PBXTargetDependency */,
+			);
+			name = TrainTicketAppUITests;
+			productName = TrainTicketAppUITests;
+			productReference = 2576E1D72831717E0071C2E7 /* TrainTicketAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2576E1AF2831717D0071C2E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2576E1B62831717D0071C2E7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2576E1CC2831717E0071C2E7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2576E1B62831717D0071C2E7;
+					};
+					2576E1D62831717E0071C2E7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2576E1B62831717D0071C2E7;
+					};
+				};
+			};
+			buildConfigurationList = 2576E1B22831717D0071C2E7 /* Build configuration list for PBXProject "TrainTicketApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2576E1AE2831717D0071C2E7;
+			productRefGroup = 2576E1B82831717D0071C2E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2576E1B62831717D0071C2E7 /* TrainTicketApp */,
+				2576E1CC2831717E0071C2E7 /* TrainTicketAppTests */,
+				2576E1D62831717E0071C2E7 /* TrainTicketAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2576E1B52831717D0071C2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2576E1C72831717D0071C2E7 /* LaunchScreen.storyboard in Resources */,
+				2576E1F2283176CB0071C2E7 /* GoogleService-Info.plist in Resources */,
+				2576E1F8283198760071C2E7 /* MainViewController.xib in Resources */,
+				2576E1C42831717D0071C2E7 /* Assets.xcassets in Resources */,
+				2576E1C22831717D0071C2E7 /* Main.storyboard in Resources */,
+				2576E1FC28319B6E0071C2E7 /* RegisterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2576E1CB2831717E0071C2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2576E1D52831717E0071C2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B5E18FB5C258F50E8A0CFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainTicketApp/Pods-TrainTicketApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainTicketApp/Pods-TrainTicketApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrainTicketApp/Pods-TrainTicketApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21C08437EFAA3B0CE987EAA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrainTicketAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36FFBA011EB95D6D63A51493 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainTicketApp-TrainTicketAppUITests/Pods-TrainTicketApp-TrainTicketAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrainTicketApp-TrainTicketAppUITests/Pods-TrainTicketApp-TrainTicketAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrainTicketApp-TrainTicketAppUITests/Pods-TrainTicketApp-TrainTicketAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8E316E7B901A5B433BD4EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrainTicketApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667BF331DC11843E78E14A58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrainTicketApp-TrainTicketAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2576E1B32831717D0071C2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2576E1FE2831A12E0071C2E7 /* LoginViewController.swift in Sources */,
+				2576E1F0283172E30071C2E7 /* User.swift in Sources */,
+				2576E1FB28319B6E0071C2E7 /* RegisterViewController.swift in Sources */,
+				2576E1BB2831717D0071C2E7 /* AppDelegate.swift in Sources */,
+				2576E1F7283198760071C2E7 /* MainViewController.swift in Sources */,
+				2576E1F4283197F50071C2E7 /* ViewControllerExtensions.swift in Sources */,
+				2576E1BD2831717D0071C2E7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2576E1C92831717E0071C2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2576E1D22831717E0071C2E7 /* TrainTicketAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2576E1D32831717E0071C2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2576E1DC2831717E0071C2E7 /* TrainTicketAppUITests.swift in Sources */,
+				2576E1DE2831717E0071C2E7 /* TrainTicketAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2576E1CF2831717E0071C2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2576E1B62831717D0071C2E7 /* TrainTicketApp */;
+			targetProxy = 2576E1CE2831717E0071C2E7 /* PBXContainerItemProxy */;
+		};
+		2576E1D92831717E0071C2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2576E1B62831717D0071C2E7 /* TrainTicketApp */;
+			targetProxy = 2576E1D82831717E0071C2E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2576E1C02831717D0071C2E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2576E1C12831717D0071C2E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2576E1C52831717D0071C2E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2576E1C62831717D0071C2E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2576E1DF2831717E0071C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2576E1E02831717E0071C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2576E1E22831717E0071C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F84DB4561002D08DA37621 /* Pods-TrainTicketApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A83D6F3A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrainTicketApp/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Suelen.TrainTicketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2576E1E32831717E0071C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E888ACA44EC3503920ABD5D /* Pods-TrainTicketApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A83D6F3A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrainTicketApp/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Suelen.TrainTicketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2576E1E52831717E0071C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865486A7A0C1C441D0B5BA35 /* Pods-TrainTicketAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A83D6F3A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Suelen.TrainTicketAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrainTicketApp.app/TrainTicketApp";
+			};
+			name = Debug;
+		};
+		2576E1E62831717E0071C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30BDC06284D07AAA59651825 /* Pods-TrainTicketAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A83D6F3A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Suelen.TrainTicketAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrainTicketApp.app/TrainTicketApp";
+			};
+			name = Release;
+		};
+		2576E1E82831717E0071C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259D8FEDD120C4CD95387532 /* Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A83D6F3A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Suelen.TrainTicketAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrainTicketApp;
+			};
+			name = Debug;
+		};
+		2576E1E92831717E0071C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A83D766EE8BBBC69B4F1755 /* Pods-TrainTicketApp-TrainTicketAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9A83D6F3A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Suelen.TrainTicketAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrainTicketApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2576E1B22831717D0071C2E7 /* Build configuration list for PBXProject "TrainTicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2576E1DF2831717E0071C2E7 /* Debug */,
+				2576E1E02831717E0071C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2576E1E12831717E0071C2E7 /* Build configuration list for PBXNativeTarget "TrainTicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2576E1E22831717E0071C2E7 /* Debug */,
+				2576E1E32831717E0071C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2576E1E42831717E0071C2E7 /* Build configuration list for PBXNativeTarget "TrainTicketAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2576E1E52831717E0071C2E7 /* Debug */,
+				2576E1E62831717E0071C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2576E1E72831717E0071C2E7 /* Build configuration list for PBXNativeTarget "TrainTicketAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2576E1E82831717E0071C2E7 /* Debug */,
+				2576E1E92831717E0071C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2576E1AF2831717D0071C2E7 /* Project object */;
+}
