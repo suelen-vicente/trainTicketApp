@@ -24,6 +24,9 @@
 		2576E1FB28319B6E0071C2E7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1F928319B6E0071C2E7 /* RegisterViewController.swift */; };
 		2576E1FC28319B6E0071C2E7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2576E1FA28319B6E0071C2E7 /* RegisterViewController.xib */; };
 		2576E1FE2831A12E0071C2E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E1FD2831A12E0071C2E7 /* LoginViewController.swift */; };
+		2576E2022836DF5A0071C2E7 /* SeatChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E2012836DF5A0071C2E7 /* SeatChart.swift */; };
+		2576E204283D10A40071C2E7 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E203283D10A40071C2E7 /* Seat.swift */; };
+		2576E206283D111D0071C2E7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576E205283D111D0071C2E7 /* Persistence.swift */; };
 		4FBA7EBADB382019AA2E694A /* Pods_TrainTicketApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EDF50F971D12AE646F2D39 /* Pods_TrainTicketApp.framework */; };
 		A36F576AD0F6CFA60580EB73 /* Pods_TrainTicketApp_TrainTicketAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD660C649FBFF554F740098 /* Pods_TrainTicketApp_TrainTicketAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +70,9 @@
 		2576E1F928319B6E0071C2E7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2576E1FA28319B6E0071C2E7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		2576E1FD2831A12E0071C2E7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2576E2012836DF5A0071C2E7 /* SeatChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatChart.swift; sourceTree = "<group>"; };
+		2576E203283D10A40071C2E7 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
+		2576E205283D111D0071C2E7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		259D8FEDD120C4CD95387532 /* Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrainTicketApp-TrainTicketAppUITests/Pods-TrainTicketApp-TrainTicketAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		30BDC06284D07AAA59651825 /* Pods-TrainTicketAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainTicketAppTests.release.xcconfig"; path = "Target Support Files/Pods-TrainTicketAppTests/Pods-TrainTicketAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		36EDF50F971D12AE646F2D39 /* Pods_TrainTicketApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainTicketApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				2576E1EF283172E30071C2E7 /* User.swift */,
+				2576E2012836DF5A0071C2E7 /* SeatChart.swift */,
+				2576E203283D10A40071C2E7 /* Seat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				2576E1F3283197F50071C2E7 /* ViewControllerExtensions.swift */,
+				2576E205283D111D0071C2E7 /* Persistence.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -471,12 +480,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2576E1FE2831A12E0071C2E7 /* LoginViewController.swift in Sources */,
+				2576E2022836DF5A0071C2E7 /* SeatChart.swift in Sources */,
 				2576E1F0283172E30071C2E7 /* User.swift in Sources */,
 				2576E1FB28319B6E0071C2E7 /* RegisterViewController.swift in Sources */,
 				2576E1BB2831717D0071C2E7 /* AppDelegate.swift in Sources */,
+				2576E204283D10A40071C2E7 /* Seat.swift in Sources */,
 				2576E1F7283198760071C2E7 /* MainViewController.swift in Sources */,
 				2576E1F4283197F50071C2E7 /* ViewControllerExtensions.swift in Sources */,
 				2576E1BD2831717D0071C2E7 /* SceneDelegate.swift in Sources */,
+				2576E206283D111D0071C2E7 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

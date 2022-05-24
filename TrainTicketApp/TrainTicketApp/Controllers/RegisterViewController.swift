@@ -26,14 +26,22 @@ class RegisterViewController: UIViewController {
     
     @IBAction func touchUpInsideRegisterButton(_ sender: Any) {
         guard let email = emailTextField.text,
-                  !email.isEmpty,
-                  let password = passwordTextField.text,
-                  !password.isEmpty,
-                  let confirmPassword = passwordConfirmationTextField.text,
-                  !confirmPassword.isEmpty else{
-                      showError(title: "Error Registering", message: "All fields must be filled.")
-                      return
-                  }
+              !email.isEmpty,
+              let password = passwordTextField.text,
+              !password.isEmpty,
+              let confirmPassword = passwordConfirmationTextField.text,
+              !confirmPassword.isEmpty,
+              let firstName = firstNameTextField.text,
+              !firstName.isEmpty,
+              let lastName = lastNameTextField.text,
+              !lastName.isEmpty,
+              let birthDate = birthDateTextField.text,
+              !birthDate.isEmpty,
+              let documentId = documentIdTextField.text,
+              !documentId.isEmpty else{
+                  showError(title: "Error Registering", message: "All fields must be filled.")
+                  return
+              }
 
             guard password == confirmPassword else{
                 showError(title: "Error Registering", message: "Passwords do not match!")
@@ -44,6 +52,7 @@ class RegisterViewController: UIViewController {
             guard let strongSelf = self else { return }
             if error == nil {
                 // Success
+                Persistence.addUser(user: User(firstName: firstName, lastName: lastName, email: email, password: password, id: documentId, birthDate: birthDate, admin: false))
                 strongSelf.showMainScreen()
             } else {
                 // Failure
