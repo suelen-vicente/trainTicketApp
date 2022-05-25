@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainViewController: UIViewController {
 
@@ -54,111 +55,123 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var seat5DButton: UIButton!
     
+    //Confirm Edit Button
+    @IBOutlet weak var confirmEditButton: UIButton!
     
     @IBAction func touchUpInside1AButton(_ sender: Any) {
-        selectedSeat = "1A"
+        selectedSeatId = "1A"
         paintSeats()
     }
     
     @IBAction func touchUpInside1BButton(_ sender: Any) {
-        selectedSeat = "1B"
+        selectedSeatId = "1B"
         paintSeats()
     }
     
     @IBAction func touchUpInside1CButton(_ sender: Any) {
-        selectedSeat = "1C"
+        selectedSeatId = "1C"
         paintSeats()
     }
     
     @IBAction func touchUpInside1DButton(_ sender: Any) {
-        selectedSeat = "1D"
+        selectedSeatId = "1D"
         paintSeats()
     }
     
     @IBAction func touchUpInside2AButton(_ sender: Any) {
-        selectedSeat = "2A"
+        selectedSeatId = "2A"
         paintSeats()
     }
     
     @IBAction func touchUpInside2BButton(_ sender: Any) {
-        selectedSeat = "2B"
+        selectedSeatId = "2B"
         paintSeats()
     }
     
     @IBAction func touchUpInside2CButton(_ sender: Any) {
-        selectedSeat = "2C"
+        selectedSeatId = "2C"
         paintSeats()
     }
     
     @IBAction func touchUpInside2DButton(_ sender: Any) {
-        selectedSeat = "2D"
+        selectedSeatId = "2D"
         paintSeats()
     }
     
     @IBAction func touchUpInside3AButton(_ sender: Any) {
-        selectedSeat = "3A"
+        selectedSeatId = "3A"
         paintSeats()
     }
     
     @IBAction func touchUpInside3BButton(_ sender: Any) {
-        selectedSeat = "3B"
+        selectedSeatId = "3B"
         paintSeats()
     }
     
     @IBAction func touchUpInside3CButton(_ sender: Any) {
-        selectedSeat = "3C"
+        selectedSeatId = "3C"
         paintSeats()
     }
     
     @IBAction func touchUpInside3DButton(_ sender: Any) {
-        selectedSeat = "3D"
+        selectedSeatId = "3D"
         paintSeats()
     }
     
     @IBAction func touchUpInside4AButton(_ sender: Any) {
-        selectedSeat = "4A"
+        selectedSeatId = "4A"
         paintSeats()
     }
     
     @IBAction func touchUpInside4BButton(_ sender: Any) {
-        selectedSeat = "4B"
+        selectedSeatId = "4B"
         paintSeats()
     }
     
     @IBAction func touchUpInside4CButton(_ sender: Any) {
-        selectedSeat = "4C"
+        selectedSeatId = "4C"
         paintSeats()
     }
     
     @IBAction func touchUpInside4DButton(_ sender: Any) {
-        selectedSeat = "4D"
+        selectedSeatId = "4D"
         paintSeats()
     }
     
     @IBAction func touchUpInside5AButton(_ sender: Any) {
-        selectedSeat = "5A"
+        selectedSeatId = "5A"
         paintSeats()
     }
     
     @IBAction func touchUpInside5BButton(_ sender: Any) {
-        selectedSeat = "5B"
+        selectedSeatId = "5B"
         paintSeats()
     }
     
     @IBAction func touchUpInside5CButton(_ sender: Any) {
-        selectedSeat = "5C"
+        selectedSeatId = "5C"
         paintSeats()
     }
     
     @IBAction func touchUpInside5DButton(_ sender: Any) {
-        selectedSeat = "5D"
+        selectedSeatId = "5D"
         paintSeats()
+    }
+    
+    @IBAction func touchUpInsideCancelButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func touchUpInsideConfirmEditButton(_ sender: Any) {
+        let seatIndex = seatButtonChart.firstIndex(where: {$0.seat.id == selectedSeatId})!
+        seats[seatIndex].passenger = (Auth.auth().currentUser?.email)!
+        seatButtonChart[seatIndex].seat = seats[seatIndex]
     }
     
     var seatButtonChart: [SeatButtonsChart] = []
     var seats: [Seat] = []
     
-    var selectedSeat: String = ""
+    var selectedSeatId: String = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -186,7 +199,7 @@ class MainViewController: UIViewController {
                 seat.seatButton.isEnabled = false
             }
             
-            if selectedSeat != "" && selectedSeat == seat.seat.id{
+            if selectedSeatId != "" && selectedSeatId == seat.seat.id{
                 seat.seatButton.setTitle("\(seat.seat.id)*", for: .normal)
                 seat.seatButton.tintColor = UIColor.systemTeal
             }
