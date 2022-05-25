@@ -56,72 +56,109 @@ class MainViewController: UIViewController {
     
     
     @IBAction func touchUpInside1AButton(_ sender: Any) {
+        selectedSeat = "1A"
+        paintSeats()
     }
     
     @IBAction func touchUpInside1BButton(_ sender: Any) {
+        selectedSeat = "1B"
+        paintSeats()
     }
     
-    
     @IBAction func touchUpInside1CButton(_ sender: Any) {
+        selectedSeat = "1C"
+        paintSeats()
     }
     
     @IBAction func touchUpInside1DButton(_ sender: Any) {
+        selectedSeat = "1D"
+        paintSeats()
     }
-    
     
     @IBAction func touchUpInside2AButton(_ sender: Any) {
+        selectedSeat = "2A"
+        paintSeats()
     }
     
-    
     @IBAction func touchUpInside2BButton(_ sender: Any) {
+        selectedSeat = "2B"
+        paintSeats()
     }
     
     @IBAction func touchUpInside2CButton(_ sender: Any) {
+        selectedSeat = "2C"
+        paintSeats()
     }
     
     @IBAction func touchUpInside2DButton(_ sender: Any) {
+        selectedSeat = "2D"
+        paintSeats()
     }
     
     @IBAction func touchUpInside3AButton(_ sender: Any) {
+        selectedSeat = "3A"
+        paintSeats()
     }
     
     @IBAction func touchUpInside3BButton(_ sender: Any) {
+        selectedSeat = "3B"
+        paintSeats()
     }
     
     @IBAction func touchUpInside3CButton(_ sender: Any) {
+        selectedSeat = "3C"
+        paintSeats()
     }
     
     @IBAction func touchUpInside3DButton(_ sender: Any) {
+        selectedSeat = "3D"
+        paintSeats()
     }
     
     @IBAction func touchUpInside4AButton(_ sender: Any) {
+        selectedSeat = "4A"
+        paintSeats()
     }
     
     @IBAction func touchUpInside4BButton(_ sender: Any) {
+        selectedSeat = "4B"
+        paintSeats()
     }
     
     @IBAction func touchUpInside4CButton(_ sender: Any) {
+        selectedSeat = "4C"
+        paintSeats()
     }
     
     @IBAction func touchUpInside4DButton(_ sender: Any) {
+        selectedSeat = "4D"
+        paintSeats()
     }
     
     @IBAction func touchUpInside5AButton(_ sender: Any) {
+        selectedSeat = "5A"
+        paintSeats()
     }
     
     @IBAction func touchUpInside5BButton(_ sender: Any) {
+        selectedSeat = "5B"
+        paintSeats()
     }
     
     @IBAction func touchUpInside5CButton(_ sender: Any) {
+        selectedSeat = "5C"
+        paintSeats()
     }
     
     @IBAction func touchUpInside5DButton(_ sender: Any) {
+        selectedSeat = "5D"
+        paintSeats()
     }
     
     var seatButtonChart: [SeatButtonsChart] = []
     var seats: [Seat] = []
     
-    var selectedSeat: Seat? = nil
+    var selectedSeat: String = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -146,9 +183,10 @@ class MainViewController: UIViewController {
             }else{
                 seat.seatButton.setTitle("[\(seat.seat.id)]", for: .normal)
                 seat.seatButton.tintColor = UIColor.systemRed
+                seat.seatButton.isEnabled = false
             }
             
-            if selectedSeat != nil && selectedSeat?.id == seat.seat.id{
+            if selectedSeat != "" && selectedSeat == seat.seat.id{
                 seat.seatButton.setTitle("\(seat.seat.id)*", for: .normal)
                 seat.seatButton.tintColor = UIColor.systemTeal
             }
