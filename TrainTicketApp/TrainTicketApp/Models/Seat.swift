@@ -9,4 +9,5 @@ import Foundation
 
 struct Seat:Codable{
     var id: String
+    var passenger: String
 }

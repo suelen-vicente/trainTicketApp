@@ -54,41 +54,132 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var seat5DButton: UIButton!
     
-    var seatList: [UIButton] = []
+    
+    @IBAction func touchUpInside1AButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside1BButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func touchUpInside1CButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside1DButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func touchUpInside2AButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func touchUpInside2BButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside2CButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside2DButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside3AButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside3BButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside3CButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside3DButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside4AButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside4BButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside4CButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside4DButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside5AButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside5BButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside5CButton(_ sender: Any) {
+    }
+    
+    @IBAction func touchUpInside5DButton(_ sender: Any) {
+    }
+    
+    var seatButtonChart: [SeatButtonsChart] = []
+    var seats: [Seat] = []
+    
+    var selectedSeat: Seat? = nil
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //Query seat chart to mark them as occupied, available or selected
+//        seats = MockSeats.seats()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        seats = MockSeats.seats()
         fillSeatList()
-
-        // Do any additional setup after loading the view.
+        paintSeats()
+    }
+    
+    func paintSeats(){
+        for seat in seatButtonChart{
+            if seat.seat.passenger == ""{
+                seat.seatButton.setTitle(seat.seat.id, for: .normal)
+                seat.seatButton.tintColor = UIColor.systemGreen
+            }else{
+                seat.seatButton.setTitle("[\(seat.seat.id)]", for: .normal)
+                seat.seatButton.tintColor = UIColor.systemRed
+            }
+            
+            if selectedSeat != nil && selectedSeat?.id == seat.seat.id{
+                seat.seatButton.setTitle("\(seat.seat.id)*", for: .normal)
+                seat.seatButton.tintColor = UIColor.systemTeal
+            }
+        }
     }
     
     func fillSeatList(){
-        seatList.append(seat1AButton)
-        seatList.append(seat1BButton)
-        seatList.append(seat1CButton)
-        seatList.append(seat1DButton)
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat1AButton, seat: seats[0]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat1BButton, seat: seats[1]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat1CButton, seat: seats[2]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat1DButton, seat: seats[3]))
         
-        seatList.append(seat2AButton)
-        seatList.append(seat2BButton)
-        seatList.append(seat2CButton)
-        seatList.append(seat2DButton)
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat2AButton, seat: seats[4]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat2BButton, seat: seats[5]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat2CButton, seat: seats[6]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat2DButton, seat: seats[7]))
         
-        seatList.append(seat3AButton)
-        seatList.append(seat3BButton)
-        seatList.append(seat3CButton)
-        seatList.append(seat3DButton)
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat3AButton, seat: seats[8]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat3BButton, seat: seats[9]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat3CButton, seat: seats[10]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat3DButton, seat: seats[11]))
         
-        seatList.append(seat4AButton)
-        seatList.append(seat4BButton)
-        seatList.append(seat4CButton)
-        seatList.append(seat4DButton)
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat4AButton, seat: seats[12]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat4BButton, seat: seats[13]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat4CButton, seat: seats[14]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat4DButton, seat: seats[15]))
         
-        seatList.append(seat5AButton)
-        seatList.append(seat5BButton)
-        seatList.append(seat5CButton)
-        seatList.append(seat5DButton)
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat5AButton, seat: seats[16]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat5BButton, seat: seats[17]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat5CButton, seat: seats[18]))
+        seatButtonChart.append(SeatButtonsChart(seatButton: seat5DButton, seat: seats[19]))
     }
 
 }

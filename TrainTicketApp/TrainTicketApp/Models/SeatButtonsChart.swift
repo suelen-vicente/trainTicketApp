@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct SeatChart{
+struct SeatButtonsChart{
     var seatButton: UIButton
     var seat: Seat
 }
